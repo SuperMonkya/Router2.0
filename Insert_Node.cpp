@@ -18,8 +18,3 @@ bool Graphcnt::insertnode(){//插入一个结点
 	cout << "Node inserted successfully!!" << endl;
 	return true;
 };
-
-
-
-
-
