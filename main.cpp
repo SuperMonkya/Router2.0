@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
 	Graphcnt G(30);
-	cout << "\tRead file and insert node." << endl;
+	cout << "Read file and insert node." << endl;
 	G.insertnode();
-	cout << "\tThe total number of nodes:" << G.numnode << endl;
+	cout << "The total number of nodes:" << G.numnode << endl;
 	int i, j, weight;
 	ifstream fin("data2.txt", std::ios::in);
 	char line[1024] = { 0 };
@@ -29,7 +29,7 @@ int main()
 
 	fin.clear();
 	fin.close();
-	cout << "The total number of edges:" << G.numEdges << endl;
+	cout << "\tThe total number of edges:" << G.numEdges << endl;
 	int h;
 	int r;
 	int* dist = new int[G.numnode];
@@ -39,7 +39,7 @@ int main()
 
 	while (a)
 	{
-		cout << "    1.Print routing table(enter the route number)\n    2.Delete a node\n    3.Delete a edge\n    4.Add a node\n    5.Add a edge\n    6.Exit" << endl;
+		cout << "    1.Print routing table(route number)\n    2.Delete a node\n    3.Delete a edge\n    4.Add a node\n    5.Add a edge\n    6.Exit" << endl;
 		cin >> b;
 		if (b == 1)
 		{
@@ -48,7 +48,7 @@ int main()
 			r = G.getnode(v);
 			while (r == -1)
 			{
-				cout << "There is no such router£¬" << endl;
+				cout << "There is no such router." << endl;
 				cout << "Please enter the router:" << endl;
 				cin >> v;
 				r = G.getnode(v);
@@ -65,17 +65,17 @@ int main()
 			int w = G.getnode(v);
 			while (!G.removenode(w))
 			{
-				cout << "There is no such node.\n" << endl;
-				cout << "Delete node: " << endl;
+				cout << "There is no such node." << endl;
+				cout << "Delete node." << endl;
 				cin >> v;
 				w = G.getnode(v);
 			}
-			cout << "A new routing table has been generated.Please enter the router to view the routing table:" << endl;
+			cout << "A new routing table has been generated.\tPlease enter the router to view the routing table:" << endl;
 			cin >> v;
 			r = G.getnode(v);
 			if (r == -1)
 			{
-				cout << "There is no such router.\n" << endl;
+				cout << "There is no such router." << endl;
 			}
 			else
 			{
@@ -100,6 +100,7 @@ int main()
 			}
 
 		}
+
 		if (b == 4)
 		{
 			cout << "Please enter the node you want to add£º\n";
@@ -126,12 +127,11 @@ int main()
 			fin.close();
 			cout << "Node inserted successfully!!" << endl;
 		}
-
 		if (b == 5)
 		{
 			cout << "Please enter the front and rear node,weight,network number£º\n";
 			ofstream fout("data2.txt", ofstream::app);
-			char str[1024];
+			char str[2048];
 			if (cin >> str)
 			{
 				gets_s(str);
@@ -165,34 +165,7 @@ int main()
 			int* dist = new int[G.numnode];
 			int* path = new int[G.numEdges];
 		}
-
-		if (b == 4)
-		{
-			cout << "Please enter the node you want to add£º\n" << endl;
-			ofstream out("data1.txt", ofstream::app);
-			char ch[10];
-			cin.ignore();
-			if (cin >> ch)
-			{
-				out << ch << endl;
-			}
-			out.close();
-			ifstream fin("data1.txt", std::ios::in);
-			char line[1024] = { 0 };
-			G.numnode = 0;
-			string x = "";
-			while (fin.getline(line, sizeof(line)))
-			{
-				stringstream word(line);
-				word >> x;
-				G.NodeTable[G.numnode].start = x;
-				G.numnode++;
-			}
-			fin.clear();
-			fin.close();
-			cout << "Node inserted successfully!!" << endl;
-		}
-
+		
 
 		if (b == 6)
 		{
@@ -203,3 +176,5 @@ int main()
 	}
 
 }
+
+
