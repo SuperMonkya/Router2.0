@@ -15,6 +15,6 @@ bool Graphcnt::insertnode(){//插入一个结点
 
 	fin.clear();
 	fin.close();
-	cout << "\tNode inserted successfully!!" << endl;
+	cout << "Node inserted successfully!!" << endl;
 	return true;
 };

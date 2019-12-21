@@ -29,7 +29,7 @@ int main()
 
 	fin.clear();
 	fin.close();
-	cout << "\tThe total number of edges:" << G.numEdges << endl;
+	cout << "The total number of edges:" << G.numEdges << endl;
 	int h;
 	int r;
 	int* dist = new int[G.numnode];
@@ -43,13 +43,13 @@ int main()
 		cin >> b;
 		if (b == 1)
 		{
-			cout << "\tPlease enter the route number to be queried:" << endl;
+			cout << "Please enter the route number to be queried:" << endl;
 			cin >> v;
 			r = G.getnode(v);
 			while (r == -1)
 			{
-				cout << "\tThere is no such router.\n" << endl;
-				cout << "\tPlease enter the router:" << endl;
+				cout << "There is no such router，" << endl;
+				cout << "Please enter the router:" << endl;
 				cin >> v;
 				r = G.getnode(v);
 			}
@@ -60,22 +60,22 @@ int main()
 		{
 
 			//删除一个路由器 
-			cout << "\tDelete node：" << endl;
+			cout << "Delete node：" << endl;
 			cin >> v;
 			int w = G.getnode(v);
 			while (!G.removenode(w))
 			{
-				cout << "\tThere is no such node.\n" << endl;
-				cout << "\tDelete node: " << endl;
+				cout << "There is no such node.\n" << endl;
+				cout << "Delete node: " << endl;
 				cin >> v;
 				w = G.getnode(v);
 			}
-			cout << "A new routing table has been generated.\tPlease enter the router to view the routing table:" << endl;
+			cout << "A new routing table has been generated.Please enter the router to view the routing table:" << endl;
 			cin >> v;
 			r = G.getnode(v);
 			if (r == -1)
 			{
-				cout << "\tThere is no such router.\n" << endl;
+				cout << "There is no such router.\n" << endl;
 			}
 			else
 			{
@@ -85,14 +85,14 @@ int main()
 		if (b == 3)
 		{
 			//删除一条边 
-			cout << "\tDelete a edge：" << endl;
+			cout << "Delete a edge：" << endl;
 			cin >> v;
 			cin >> u;
 			r = G.getnode(v);
 			h = G.getnode(u);
 			while (!G.Delete_Edge(r, h))
 			{
-				cout << "\tDelete a edge：" << endl;
+				cout << "Delete a edge：" << endl;
 				cin >> v;
 				cin >> u;
 				r = G.getnode(v);
@@ -129,7 +129,7 @@ int main()
 
 		if (b == 5)
 		{
-			cout << "\tPlease enter the front and rear node,weight,network number：\n";
+			cout << "Please enter the front and rear node,weight,network number：\n";
 			ofstream fout("data2.txt", ofstream::app);
 			char str[1024];
 			if (cin >> str)
@@ -159,7 +159,7 @@ int main()
 			}
 			fin.clear();
 			fin.close();
-			cout << "\tThe total number of edges:" << G.numEdges << endl;
+			cout << "The total number of edges:" << G.numEdges << endl;
 			int h;
 			int r;
 			int* dist = new int[G.numnode];
@@ -168,7 +168,7 @@ int main()
 
 		if (b == 4)
 		{
-			cout << "\tPlease enter the node you want to add：\n" << endl;
+			cout << "Please enter the node you want to add：\n" << endl;
 			ofstream out("data1.txt", ofstream::app);
 			char ch[10];
 			cin.ignore();
@@ -190,14 +190,14 @@ int main()
 			}
 			fin.clear();
 			fin.close();
-			cout << "\tNode inserted successfully!!" << endl;
+			cout << "Node inserted successfully!!" << endl;
 		}
 
 
 		if (b == 6)
 		{
 			a = 0;
-			cout << "\tThank you for using." << endl;
+			cout << "Thank you for using." << endl;
 		}
 
 	}

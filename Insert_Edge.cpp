@@ -10,7 +10,7 @@ bool Graphcnt::insertEdge(int v1, int v2, int cost, string v3){
 			p = p->link;
 		if (p != NULL)
 		{
-			cout << "\tThe edge already exists, please re-enter another!" << endl;
+			cout << "The edge already exists, please re-enter another!" << endl;
 			return false;
 		} //现已存在此边则不插入
 		//插入后续操作

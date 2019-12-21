@@ -38,7 +38,7 @@ bool Graphcnt::removenode(int v){
 			}
 			else s = s->link;
 	}
-	cout << "\tNode deletion successfully!!" << endl;  //删除结点成功
+	cout << "Node deletion successfully!!" << endl;  //删除结点成功
 	return true;
 }
 
