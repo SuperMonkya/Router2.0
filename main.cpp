@@ -1,8 +1,11 @@
 #include"main.h"
 int DefaultVertices = 30;
 using namespace std;
+
+
 int main()
 {
+
 	Graphcnt G(30);
 	cout << "Read file and insert node." << endl;
 	G.insertnode();
@@ -17,10 +20,10 @@ int main()
 	while (fin.getline(line, sizeof(line)))
 	{
 		stringstream word(line);
-		word >> x;//路由起点 
-		word >> y;//路由终点 
-		word >> z;//权值 
-		word >> m;//网络号 
+		word >> x;//路由起点
+		word >> y;//路由终点
+		word >> z;//权值
+		word >> m;//网络号
 		i = G.getnode(x);
 		j = G.getnode(y);
 		weight = z;
@@ -35,7 +38,7 @@ int main()
 	int* dist = new int[G.numnode];
 	int* path = new int[G.numEdges];
 	string v, u; int a = 1, b;
-	//输出路由表 
+	//输出路由表
 
 	while (a)
 	{
@@ -59,7 +62,7 @@ int main()
 		if (b == 2)
 		{
 
-			//删除一个路由器 
+			//删除一个路由器
 			cout << "Delete node：" << endl;
 			cin >> v;
 			int w = G.getnode(v);
@@ -84,7 +87,7 @@ int main()
 		}
 		if (b == 3)
 		{
-			//删除一条边 
+			//删除一条边
 			cout << "Delete a edge：" << endl;
 			cin >> v;
 			cin >> u;
@@ -134,10 +137,12 @@ int main()
 			ofstream fout("data2.txt", ofstream::app);
 			char str[2048];
 			fout << endl;
+			cin.ignore();
 			if (cin >> str)
 			{
+				fout << str;
 				gets_s(str);
-				fout <<str << endl;
+				fout <<str;
 			}
 			fout.close();
 			ifstream fin("data2.txt", ios::in);
@@ -150,10 +155,10 @@ int main()
 			while (fin.getline(line, sizeof(line)))
 			{
 				stringstream word(line);
-				word >> x;//路由起点 
-				word >> y;//路由终点 
-				word >> z;//权值 
-				word >> m;//网络号 
+				word >> x;//路由起点
+				word >> y;//路由终点
+				word >> z;//权值
+				word >> m;//网络号
 				i = G.getnode(x);
 				j = G.getnode(y);
 				weight = z;
@@ -167,7 +172,7 @@ int main()
 			int* dist = new int[G.numnode];
 			int* path = new int[G.numEdges];
 		}
-		
+
 
 		if (b == 6)
 		{
@@ -178,5 +183,9 @@ int main()
 	}
 
 }
+
+
+
+
 
 
