@@ -104,7 +104,7 @@ int main()
 		{
 			cout << "Please enter the front and rear node,weight,network number£º\n";
 			ofstream fout("data2.txt", ofstream::app);
-			char str[2048];
+			char str[1024];
 			if (cin >> str)
 			{
 				gets_s(str);
@@ -150,7 +150,7 @@ int main()
 			}
 			out.close();
 			ifstream fin("data1.txt", std::ios::in);
-			char line[2048] = { 0 };
+			char line[1024] = { 0 };
 			G.numnode = 0;
 			string x = "";
 			while (fin.getline(line, sizeof(line)))
