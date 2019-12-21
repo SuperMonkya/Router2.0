@@ -8,7 +8,7 @@ bool Graphcnt::Delete_Edge(int v1, int v2)//图上删一条边
 		{
 			q = p; p = p->link;
 		}
-		if (p != NULL) { //找到被删结点
+		if (p != NULL) {   //找到被删结点
 			if (p == s) NodeTable[v1].adj = p->link;
 			else q->link = p->link;
 			delete p;
@@ -26,12 +26,12 @@ bool Graphcnt::Delete_Edge(int v1, int v2)//图上删一条边
 		if (p == s) NodeTable[v2].adj = p->link;
 		else q->link = p->link;
 		delete p;
-		cout << "Delete successfully." << endl;
+		cout << "Delete successfully." << endl;//删除成功
 		return true;
 	}
 	else
 	{
-		cout << "Node error,deletion failed." << endl;
+		cout << "Node error,deletion failed." << endl;//要删结点不存在，删除失败
 		return false;
 	}
 }

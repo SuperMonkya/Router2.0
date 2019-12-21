@@ -1,3 +1,6 @@
+/*
+创建路由表:Li Jinlong
+*/
 #pragma once
 #include<string>
 #include <stdlib.h>
@@ -26,8 +29,8 @@ class Graphcnt
 {
 public:
 	int maxnode;  //图中结点最大数 
-	int numEdges;
-	int numnode;
+	int numEdges;//边的数量
+	int numnode;//结点数量
 	Graphcnt(int sz);
 	int getValue(int v1, int v2);
 	int getfnode(int v); //V的第一个相邻结点

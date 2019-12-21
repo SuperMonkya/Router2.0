@@ -13,6 +13,7 @@ int Graphcnt::getValue(int v1, int v2)
 		else return 100;
 	}
 }
+//查询下一个结点
 int Graphcnt::getnextnode(int v, int w)
 {
 	if (v != -1)

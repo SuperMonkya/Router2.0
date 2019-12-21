@@ -1,3 +1,4 @@
+//删除边：Lian Yufan
 #pragma once
 #include<string>
 #include<fstream>
@@ -24,8 +25,8 @@ class Graphcnt
 {
 public:
 	int maxnode;  //图中结点最大数 
-	int numEdges;
-	int numnode;
+	int numEdges; //边的数量
+	int numnode;  //结点数量
 	Graphcnt(int sz);
 	bool Delete_Edge(int v1, int v2);
 	int getnode(const string Node)
