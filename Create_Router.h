@@ -1,6 +1,4 @@
-/*
-创建路由表:Li Jinlong
-*/
+//创建路由表:Li Jinlong
 #pragma once
 #include<string>
 #include <stdlib.h>

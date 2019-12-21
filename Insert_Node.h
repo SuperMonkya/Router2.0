@@ -1,4 +1,4 @@
-#pragma once
+//插入结点：Lian Yufan
 #pragma once
 #include<string>
 #include<fstream>
@@ -25,9 +25,8 @@ class Graphcnt
 {
 public:
 	int maxnode;  //图中结点最大数 
-	int numEdges;
-	int numnode;
-	//Graphcnt();
+	int numEdges; //边的数量
+	int numnode; //结点数量
 	Graphcnt(int sz);
 	bool insertnode();//插入一个结点 
 
