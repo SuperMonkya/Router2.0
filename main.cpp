@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
 	Graphcnt G(30);
-	cout << "Read file and insert node." << endl;
+	cout << "\tRead file and insert node." << endl;
 	G.insertnode();
-	cout << "The total number of nodes:" << G.numnode << endl;
+	cout << "\tThe total number of nodes:" << G.numnode << endl;
 	int i, j, weight;
 	ifstream fin("data2.txt", std::ios::in);
 	char line[1024] = { 0 };
