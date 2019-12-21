@@ -132,7 +132,7 @@ int main()
 		{
 			cout << "Please enter the front and rear node,weight,network number£º\n";
 			ofstream fout("data2.txt", ofstream::app);
-			char str[2048];
+			char str[1024];
 			fout << endl;
 			if (cin >> str)
 			{
