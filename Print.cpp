@@ -20,12 +20,12 @@ void Print(Graphcnt& G, int v, int dist[], int path[])
 
 			if (k == 1)
 			{
-				cout << "Destination network-> " << G.NodeTable[d[0]].start << " ";
+				cout << "\tDestination network-> " << G.NodeTable[d[0]].start << " ";
 				cout << "Direct delivery" << " ";//直接交付
 			}
 			else
 			{
-				cout << "Destination network-> " << G.NodeTable[d[0]].start << " ";
+				cout << "\tDestination network-> " << G.NodeTable[d[0]].start << " ";
 				cout << "Next jump --> " << G.NodeTable[d[k - 1]].start << " ";//下一跳
 			}
 			cout << "Shortest path length：" << dist[i] << endl;//最短路径长度
