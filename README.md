@@ -1,23 +1,22 @@
 # Router2.0
 计网课设作业
-给定如下网络的拓扑，编制程序（语言不限）输入拓扑，任意指定路由器号，生成其路由表并输出。验收时要求增加/删除原拓扑中指定的任意边、顶点，重新生成路由表。
-the front and rear node,weight,network number
-=1 2 2 2.x.x.x
-=1 6 1 6.x.x.x
-=1 7 1 7.x.x.x
-=2 4 4 4.x.x.x
-=3 2 2 2.x.x.x
-=3 4 1 1.x.x.x
-=3 7 2 7.x.x.x
-=3 6 3 6.x.x.x
-=4 5 1 5.x.x.x
-=4 7 6 7.x.x.x
-=4 8 5 8.x.x.x
-=4 9 2 9.x.x.x
-=5 6 5 6.x.x.x
-=6 7 1 7.x.x.x
-=7 8 3 8.x.x.x
-=8 9 2 9.x.x.x
+<br>the front and rear node,weight,network number
+<br>1 2 2 2.x.x.x
+<br>1 6 1 6.x.x.x
+<br>1 7 1 7.x.x.x
+<br>2 4 4 4.x.x.x
+<br>3 2 2 2.x.x.x
+<br>3 4 1 1.x.x.x
+<br>3 7 2 7.x.x.x
+<br>3 6 3 6.x.x.x
+<br>4 5 1 5.x.x.x
+<br>4 7 6 7.x.x.x
+<br>4 8 5 8.x.x.x
+<br>4 9 2 9.x.x.x
+<br>5 6 5 6.x.x.x
+<br>6 7 1 7.x.x.x
+<br>7 8 3 8.x.x.x
+<br>8 9 2 9.x.x.x
 满足：
 1. 增加/删除原拓扑中指定的任意边、顶点，重新生成路由表
 2. 无操作时报错重新进行操作
