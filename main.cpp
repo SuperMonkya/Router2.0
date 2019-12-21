@@ -9,7 +9,7 @@ int main()
 	cout << "The total number of nodes:" << G.numnode << endl;
 	int i, j, weight;
 	ifstream fin("data2.txt", std::ios::in);
-	char line[1024] = { 0 };
+	char line[2048] = { 0 };
 	string x = "";
 	string y = "";
 	string m = "";
@@ -150,7 +150,7 @@ int main()
 			}
 			out.close();
 			ifstream fin("data1.txt", std::ios::in);
-			char line[1024] = { 0 };
+			char line[2048] = { 0 };
 			G.numnode = 0;
 			string x = "";
 			while (fin.getline(line, sizeof(line)))
