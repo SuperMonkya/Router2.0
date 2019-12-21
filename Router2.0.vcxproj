@@ -139,6 +139,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Create_Router.h" />
+    <ClInclude Include="Delete_Edge.h" />
+    <ClInclude Include="Delete_Node.h" />
+    <ClInclude Include="Insert_Edge.h" />
+    <ClInclude Include="Insert_Node.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Print.h" />
+    <ClInclude Include="Shortest_Way.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Create_Router.cpp" />
+    <ClCompile Include="Delete_Edge.cpp" />
+    <ClCompile Include="Delete_Node.cpp" />
+    <ClCompile Include="Insert_Edge.cpp" />
+    <ClCompile Include="Insert_Node.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Print.cpp" />
+    <ClCompile Include="Shortest_Way.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data1.txt" />
+    <Text Include="data2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

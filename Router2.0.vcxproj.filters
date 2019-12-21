@@ -18,5 +18,56 @@
     <ClInclude Include="Create_Router.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Delete_Edge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Delete_Node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Insert_Edge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Insert_Node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Print.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Shortest_Way.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Create_Router.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Delete_Edge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Delete_Node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Insert_Edge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Insert_Node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shortest_Way.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data1.txt" />
+    <Text Include="data2.txt" />
   </ItemGroup>
 </Project>
