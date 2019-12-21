@@ -60,7 +60,7 @@ int main()
 		{
 
 			//删除一个路由器 
-			cout << "Delete node." << endl;
+			cout << "Delete node：" << endl;
 			cin >> v;
 			int w = G.getnode(v);
 			while (!G.removenode(w))
@@ -85,14 +85,14 @@ int main()
 		if (b == 3)
 		{
 			//删除一条边 
-			cout << "Delete a edge." << endl;
+			cout << "Delete a edge：" << endl;
 			cin >> v;
 			cin >> u;
 			r = G.getnode(v);
 			h = G.getnode(u);
 			while (!G.Delete_Edge(r, h))
 			{
-				cout << "Delete a edge." << endl;
+				cout << "Delete a edge：" << endl;
 				cin >> v;
 				cin >> u;
 				r = G.getnode(v);
@@ -104,7 +104,7 @@ int main()
 		{
 			cout << "Please enter the front and rear node,weight,network number：\n";
 			ofstream fout("data2.txt", ofstream::app);
-			char str[1024];
+			char str[2048];
 			if (cin >> str)
 			{
 				gets_s(str);

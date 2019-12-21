@@ -2,7 +2,7 @@
 bool Graphcnt::insertnode()//插入一个结点 
 {
 	ifstream fin("data1.txt", std::ios::in);
-	char line[1024] = { 0 }; 
+	char line[2048] = { 0 }; 
 	numnode = 0;
 	string x = "";
 	while (fin.getline(line, sizeof(line)))
