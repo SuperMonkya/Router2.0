@@ -107,9 +107,10 @@ int main()
 			ofstream out("data1.txt", ofstream::app);
 			char ch[10];
 			cin.ignore();
+			out << endl;
 			if (cin >> ch)
 			{
-				out << ch << endl;
+				out << ch;
 			}
 			out.close();
 			ifstream fin("data1.txt", std::ios::in);
@@ -132,10 +133,11 @@ int main()
 			cout << "Please enter the front and rear node,weight,network number£º\n";
 			ofstream fout("data2.txt", ofstream::app);
 			char str[2048];
+			fout << endl;
 			if (cin >> str)
 			{
 				gets_s(str);
-				fout << str << endl;
+				fout <<str << endl;
 			}
 			fout.close();
 			ifstream fin("data2.txt", ios::in);
