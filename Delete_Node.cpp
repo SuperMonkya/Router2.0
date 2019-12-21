@@ -35,7 +35,6 @@ bool Graphcnt::removenode(int v)
 	p = NodeTable[v].adj = NodeTable[numnode].adj;
 	if (p != NULL)
 	{
-
 		s = NodeTable[getnode(p->dest)].adj;
 		while (s != NULL)
 
@@ -45,8 +44,7 @@ bool Graphcnt::removenode(int v)
 				s->dest = NodeTable[v].start; break;
 			}
 			else s = s->link;
-
 	}
-	cout << "Node deletion successfully!!" << endl;
+	cout << "Node deletion successfully!!" << endl;  //删除结点成功
 	return true;
 }

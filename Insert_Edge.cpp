@@ -1,7 +1,6 @@
 #include"insert_edge.h"
 bool Graphcnt::insertEdge(int v1, int v2, int cost, string v3)
 {
-
 	if (v1 >= 0 && v1 <= numnode && v2 >= 0 && v2 <= numnode)//v1,v2ºÏ·¨ 
 	{
 		string a;
