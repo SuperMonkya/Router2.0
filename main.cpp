@@ -100,6 +100,33 @@ int main()
 			}
 
 		}
+		if (b == 4)
+		{
+			cout << "Please enter the node you want to add£º\n";
+			ofstream out("data1.txt", ofstream::app);
+			char ch[10];
+			cin.ignore();
+			if (cin >> ch)
+			{
+				out << ch << endl;
+			}
+			out.close();
+			ifstream fin("data1.txt", std::ios::in);
+			char line[1024] = { 0 };
+			G.numnode = 0;
+			string x = "";
+			while (fin.getline(line, sizeof(line)))
+			{
+				stringstream word(line);
+				word >> x;
+				G.NodeTable[G.numnode].start = x;
+				G.numnode++;
+			}
+			fin.clear();
+			fin.close();
+			cout << "Node inserted successfully!!" << endl;
+		}
+
 		if (b == 5)
 		{
 			cout << "Please enter the front and rear node,weight,network number£º\n";
@@ -137,32 +164,6 @@ int main()
 			int r;
 			int* dist = new int[G.numnode];
 			int* path = new int[G.numEdges];
-		}
-		if (b == 4)
-		{
-			cout << "Please enter the node you want to add£º\n";
-			ofstream out("data1.txt", ofstream::app);
-			char ch[10];
-			cin.ignore();
-			if (cin >> ch)
-			{
-				out << ch << endl;
-			}
-			out.close();
-			ifstream fin("data1.txt", std::ios::in);
-			char line[1024] = { 0 };
-			G.numnode = 0;
-			string x = "";
-			while (fin.getline(line, sizeof(line)))
-			{
-				stringstream word(line);
-				word >> x;
-				G.NodeTable[G.numnode].start = x;
-				G.numnode++;
-			}
-			fin.clear();
-			fin.close();
-			cout << "Node inserted successfully!!" << endl;
 		}
 
 		if (b == 6)
