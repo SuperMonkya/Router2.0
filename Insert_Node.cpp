@@ -13,7 +13,7 @@ bool Graphcnt::insertnode(){//插入一个结点
 		numnode++;
 	}
 
-	fin.clear();
+	fin.clear();    //清除缓冲区（文件多次读入）
 	fin.close();
 	cout << "Node inserted successfully!!" << endl;
 	return true;
