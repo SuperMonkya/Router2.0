@@ -1,7 +1,6 @@
 #include"delete_edge.h"
 
 bool Graphcnt::Delete_Edge(int v1, int v2){  //É¾³ıÒ»Ìõ±ß
-	cout << "Li Yufan" << endl;
 	if (v1 != -1 && v2 != -1){
 		Edge* p = NodeTable[v1].adj, * q = NULL, * s = p;
 		while (p != NULL && p->dest != NodeTable[v2].start){q = p; p = p->link;}
